@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="webDriver" parallel="tests">
+  
+  <test name="Test in FireFox"> 
+      <parameter name="browser" value="FFB"  />
+         <classes>
+         <class name = "package2_scripts.logintest"  />
+         </classes>
+  </test>
+  
+  <test name = "Test In Google Chrome" >
+     <parameter name ="browser" value = "CB" />
+        <classes>
+         <class name = "package2_scripts.logintest"  />
+        </classes>
+  </test>
+ 
+  <test name ="Test in Safari">
+     <parameter name="browser" value="safari"></parameter>
+        <classes>
+           <class name="package2_scripts.logintest"></class>
+        </classes>
+  </test> 
+  
+  <test name="Test in Opera">
+     <parameter name="browser" value="opera"></parameter>
+        <classes>
+           <class name="package2_scripts.logintest"></class>
+        </classes>
+  </test>
+ 
+</suite> <!-- Suite -->

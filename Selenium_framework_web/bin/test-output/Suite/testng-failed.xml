@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="scripts.logintest">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="openbrowser"/>
+          <include name="closebrowser"/>
+          <include name="testmethodone"/>
+        </methods>
+      </class> <!-- scripts.logintest -->
+      <class name="scripts.TestFlightfinder">
+        <methods>
+          <include name="openbrowser"/>
+          <include name="closebrowser"/>
+          <include name="testmethodone"/>
+          <include name="flightbooking"/>
+        </methods>
+      </class> <!-- scripts.TestFlightfinder -->
+      <class name="package1.logintest">
+        <methods>
+          <include name="openbrowser"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="closebrowser"/>
+          <include name="testmethodone"/>
+        </methods>
+      </class> <!-- package1.logintest -->
+      <class name="scripts.TestCreateAccount">
+        <methods>
+          <include name="openbrowser"/>
+          <include name="create_account"/>
+          <include name="closebrowser"/>
+          <include name="testmethodone"/>
+        </methods>
+      </class> <!-- scripts.TestCreateAccount -->
+      <class name="Base_class.TestBaseSetup">
+        <methods>
+          <include name="openbrowser"/>
+          <include name="closebrowser"/>
+          <include name="testmethodone"/>
+        </methods>
+      </class> <!-- Base_class.TestBaseSetup -->
+      <class name="package2.logintest">
+        <methods>
+          <include name="openbrowser"/>
+          <include name="logout"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- package2.logintest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
